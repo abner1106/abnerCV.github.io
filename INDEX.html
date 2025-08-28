@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Abner Roldan Cruz Carreño</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/INDEX.css">
+    <link rel="icon" type="image/x-icon" href="IMAGES/logo_em.png" />
+    <style>
+        /* Estilos para el enlace de WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+        
+        .whatsapp-float i {
+            margin-top: 4px;
+        }
+        
+        /* Para móviles */
+        @media screen and (max-width: 767px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header con información personal -->
+        <header>
+            <div class="header-content">
+                <div class="photo-container">
+                    <div class="photo-placeholder">
+                        <img src="IMAGES/CV.jpg" alt="Foto CV">
+                    </div>
+                </div>
+                <div class="personal-info">
+                    <h1>Abner Roldan Cruz Carreño</h1>
+                    <p><i class="fas fa-birthday-cake"></i> 20 años - 6 de noviembre de 2004</p>
+                    <p><i class="fas fa-graduation-cap"></i> Estudiante de Ingeniería en Informática</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Oaxaca, México</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> abnercruz249@gmail.com</p>
+                <p><i class="fas fa-phone"></i> (951) 114 3541</p>
+            </div>
+        </header>
+
+        <main>
+            <!-- Sección de Resumen -->
+            <section class="summary">
+                <h2><i class="fas fa-user-tie"></i> Resumen Profesional</h2>
+                <p>
+                    Estudiante de Ingeniería en Informática con experiencia en reparación de computadoras, instalación de programas y sistemas operativos. 
+                    Habilidad para el aprendizaje rápido y capacidad para resolver problemas técnicos. 
+                    Con conocimientos en desarrollo de software, creación de páginas web, aplicaciones de escritorio y manejo de herramientas office.
+                </p>
+                <p>
+                    Además, cuento con capacidad de administración de ventas en sistemas, incluyendo análisis de productos más vendidos y menos vendidos, 
+                    control de inventarios (existencias y faltantes), generación de reportes de ventas diarias, semanales, mensuales o por rangos específicos, 
+                    así como análisis de totales y tendencias para la toma de decisiones estratégicas.
+                </p>
+            </section>
+
+            <div class="main-content">
+                <!-- Columna izquierda -->
+                <div class="left-column">
+                    <!-- Experiencia Laboral -->
+                    <section class="experience">
+                        <h2><i class="fas fa-briefcase"></i> Experiencia Laboral</h2>
+                        <div class="experience-item">
+                            <h3>Técnico en Soporte Informático</h3>
+                            <p class="company">CODE MONKEY'S</p>
+                            <p class="date"><i class="far fa-calendar"></i> 2022 - Presente</p>
+                            <ul>
+                                <li>Reparación y mantenimiento de equipos de computo</li>
+                                <li>Eliminación de virus y malware</li>
+                                <li>Instalación de sistemas operativos y programas</li>
+                                <li>Soporte técnico a usuarios</li>
+                                <li>Desarrollo de páginas web y aplicaciones de escritorio</li>
+                            </ul>
+                        </div>
+                        <div class="experience-item">
+                            <h3>Asistente de Sistemas</h3>
+                            <p class="company">Empresa Local</p>
+                            <p class="date"><i class="far fa-calendar"></i> 2023 - 2024</p>
+                            <ul>
+                                <li>Gestión de inventario de equipos</li>
+                                <li>Mantenimiento preventivo y correctivo</li>
+                                <li>Instalación de software especializado</li>
+                                <li>Desarrollo de herramientas internas</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Educación -->
+                    <section class="education">
+                        <h2><i class="fas fa-graduation-cap"></i> Educación</h2>
+                        <div class="education-item">
+                            <h3>Ingeniería en Informática</h3>
+                            <p class="institution">Instituto Tecnológico del Valle Oaxaca</p>
+                            <p class="date"><i class="far fa-calendar"></i> 2022 - En curso</p>
+                        </div>
+                        <div class="education-item">
+                            <h3>Técnico en Soporte Y mantenimiento de equipo de computo</h3>
+                            <p class="institution">Centro de Bachillerato Tecnologico Industrial No 248</p>
+                            <p class="date"><i class="far fa-calendar"></i> 2019 - 2022</p>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Columna derecha -->
+                <div class="right-column">
+                    <!-- Habilidades -->
+                    <section class="skills">
+                        <h2><i class="fas fa-tools"></i> Habilidades Técnicas</h2>
+                        <div class="skill">
+                            <p>Reparación de Computadoras</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>Instalación de SO y Programas</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>Desarrollo Web</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>Aplicaciones de Escritorio</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>Eliminación de Virus</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>Paquete Office</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>Programación</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Idiomas -->
+                    <section class="languages">
+                        <h2><i class="fas fa-language"></i> Idiomas</h2>
+                        <div class="language">
+                            <p>Español</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="language">
+                            <p>Inglés (Básico)</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Habilidades Adicionales -->
+                    <section class="additional-skills">
+                        <h2><i class="fas fa-star"></i> Otras Habilidades</h2>
+                        <ul>
+                            <li><i class="fas fa-motorcycle"></i> Manejo de motocicleta</li>
+                            <li><i class="fas fa-bolt"></i> Aprendizaje rápido</li>
+                            <li><i class="fas fa-users"></i> Trabajo en equipo</li>
+                            <li><i class="fas fa-lightbulb"></i> Resolución de problemas</li>
+                            <li><i class="fas fa-laptop-code"></i> Desarrollo frontend y backend</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <!-- Botones de acción -->
+        <div class="action-buttons">
+            <button id="print-btn"><i class="fas fa-print"></i> Imprimir CV</button>
+            <button id="theme-btn"><i class="fas fa-moon"></i> Modo Oscuro</button>
+        </div>
+    </div>
+
+    <!-- Enlace flotante de WhatsApp -->
+    <a href="https://wa.me/529511143541?text=Hola,%20me%20interesa%20contactarte" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="JAVA/INDEX.js"></script>
+</body>
+</html>

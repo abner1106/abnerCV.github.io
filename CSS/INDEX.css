@@ -1,0 +1,357 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --accent: #e74c3c;
+    --light: #ecf0f1;
+    --dark: #2c3e50;
+    --gray: #7f8c8d;
+    --light-gray: #bdc3c7;
+}
+.photo-container {
+    margin-right: 30px;
+}
+
+.photo-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden; /* Para que la imagen no sobresalga */
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen se ajuste sin deformarse */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    color: white;
+    padding: 30px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.photo-container {
+    margin-right: 30px;
+}
+
+.photo-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+}
+
+.photo-placeholder i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.photo-placeholder span {
+    font-size: 12px;
+    text-align: center;
+}
+
+.personal-info h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.personal-info p {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.personal-info i {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+/* Main content */
+main {
+    padding: 30px;
+}
+
+.summary {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.summary h2 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.summary h2 i {
+    margin-right: 10px;
+}
+
+.main-content {
+    display: flex;
+    gap: 30px;
+}
+
+.left-column {
+    flex: 3;
+}
+
+.right-column {
+    flex: 2;
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--secondary);
+    display: flex;
+    align-items: center;
+}
+
+h2 i {
+    margin-right: 10px;
+}
+
+/* Experience */
+.experience-item, .education-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--light);
+    border-radius: 5px;
+}
+
+.experience-item h3, .education-item h3 {
+    color: var(--primary);
+}
+
+.company, .institution {
+    color: var(--secondary);
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.date {
+    color: var(--gray);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.date i {
+    margin-right: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+ul li {
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 20px;
+}
+
+ul li:before {
+    content: "•";
+    color: var(--secondary);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Skills */
+.skill, .language {
+    margin-bottom: 15px;
+}
+
+.skill p, .language p {
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background: linear-gradient(to right, var(--secondary), var(--primary));
+    border-radius: 5px;
+}
+
+/* Additional skills */
+.additional-skills ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.additional-skills i {
+    margin-right: 10px;
+    color: var(--secondary);
+    width: 20px;
+}
+
+/* Action buttons */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: var(--light);
+}
+
+.action-buttons button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.action-buttons button i {
+    margin-right: 8px;
+}
+
+.action-buttons button:hover {
+    background-color: var(--secondary);
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.dark-mode .container {
+    background-color: #2d2d2d;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .experience-item, 
+.dark-mode .education-item {
+    background-color: #3d3d3d;
+}
+
+.dark-mode .skill-bar {
+    background-color: #555;
+}
+
+.dark-mode .action-buttons {
+    background-color: #3d3d3d;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .photo-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .main-content {
+        flex-direction: column;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+}
+
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+    
+    .container {
+        box-shadow: none;
+    }
+    
+    .action-buttons {
+        display: none;
+    }
+}
